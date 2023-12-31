@@ -1,11 +1,10 @@
-"use client"
 
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import { useEffect, useState } from 'react'
-import { Tilt } from 'react-tilt'
+
 
 
 export default function Home() {
@@ -61,7 +60,7 @@ export default function Home() {
       <main className={styles.main}>
       <h1 className={styles.h1}>💜Happy New Year💜</h1>
       <p className={styles.pNote}>Please Click The Envelope✉️</p>
-      <Tilt options={defaultOptions} style={{ height: 250, width: 250 }}>
+    
       <div onClick={handleClick} className={styles.container}>
         <div className={`${styles.envelopewrapper} ${isOpen && styles.flap}`}>
             <div className={styles.envelope}>
@@ -78,7 +77,7 @@ export default function Home() {
             <div  className={styles.text}></div>
         </div>
        </div>
-       </Tilt>
+      
       </main>
     </>
   )
